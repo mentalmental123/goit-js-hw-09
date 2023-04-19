@@ -33,7 +33,7 @@ const options = {
                 const timeDiff = selectedDates[0] - new Date(); // різниця в часі
                 // console.log(timeDiff); 
             
-              blankDate = convertMs(timeDiff);
+              const blankDate = convertMs(timeDiff);
                 if (blankDate.seconds < 0) {
                   refs.startButton.disabled = false;
                   clearInterval(countDownTimer);

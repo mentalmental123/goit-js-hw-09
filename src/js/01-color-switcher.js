@@ -7,23 +7,22 @@ const refs = {
     start : document.querySelector('[data-start]'),
     stop: document.querySelector('[data-stop]'),
     BODY: document.querySelector('body'),
-    
-    
 }
 
     refs.stop.disabled = true;
-
+    let colorTimer = null;
 
 refs.start.addEventListener('click', colorized)
 
 function colorized(evt) {
     refs.stop.disabled = false;
     refs.start.disabled = true;
+    
+    colorTime();
+    colorTimer = setInterval(colorTime, 1000);
     function colorTime() {
         refs.BODY.style.backgroundColor = getRandomHexColor();    
     }
-    colorTime();
-    const colorTimer = setInterval(colorTime, 1000);
 }
 
 refs.stop.addEventListener('click', stopColorized);
