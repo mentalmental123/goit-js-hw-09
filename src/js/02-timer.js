@@ -30,7 +30,7 @@ const options = {
           function startCountdown(evt) {
               refs.startButton.disabled = true;
                   const countDownTimer = setInterval(() => {
-                timeDiff = selectedDates[0] - new Date(); // різниця в часі
+                const timeDiff = selectedDates[0] - new Date(); // різниця в часі
                 // console.log(timeDiff); 
             
               blankDate = convertMs(timeDiff);

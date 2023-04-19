@@ -21,12 +21,9 @@ function colorized(evt) {
     refs.start.disabled = true;
     function colorTime() {
         refs.BODY.style.backgroundColor = getRandomHexColor();    
-       
     }
     colorTime();
-    colorTimer = setInterval(colorTime, 1000);
-    
-
+    const colorTimer = setInterval(colorTime, 1000);
 }
 
 refs.stop.addEventListener('click', stopColorized);
