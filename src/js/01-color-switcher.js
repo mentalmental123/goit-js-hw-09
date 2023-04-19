@@ -11,6 +11,9 @@ const refs = {
     
 }
 
+    refs.stop.disabled = true;
+
+
 refs.start.addEventListener('click', colorized)
 
 function colorized(evt) {
