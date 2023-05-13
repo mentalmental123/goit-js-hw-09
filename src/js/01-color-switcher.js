@@ -25,6 +25,8 @@ function colorized(evt) {
     }
 }
 
+// hello world
+
 refs.stop.addEventListener('click', stopColorized);
 
 function stopColorized(evt) {
